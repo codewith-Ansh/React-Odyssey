@@ -1,10 +1,13 @@
-import { div, h1 } from "framer-motion/client";
+import Ansh from "./Ansh";
 
 function App() {
   return (
-    <h1>
-      My first React app
-    </h1>
+    <>
+      <Ansh/>
+      <h1>
+        Chai aur React | Ansh Darji
+      </h1> 
+    </>
   );
 }
 
