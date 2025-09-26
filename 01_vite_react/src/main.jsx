@@ -23,6 +23,9 @@ import { anticipate } from 'framer-motion'
 //     children: 'Click me to visit google'
 // }
 
+
+// --- for the two codes ---
+// React.createElement(...) works directly in JavaScript, while JSX (<App />) or calling a component (MyApp()) needs compilation/React handling — only React.createElement gives React a valid element without extra setup.
 const reactElement = React.createElement(
     'a',
     {
@@ -31,6 +34,7 @@ const reactElement = React.createElement(
     },
     "Click me to visit google"
 )
+
 // const anotherElement = (
 //     <a href="https://google.com" target='_blank'>Visit Google</a>
 // )
