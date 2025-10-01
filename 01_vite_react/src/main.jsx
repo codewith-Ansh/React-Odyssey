@@ -4,15 +4,15 @@ import App from './App.jsx'
 import { h1 } from 'framer-motion/client'
 import { anticipate } from 'framer-motion'
 
-// function MyApp(){
-//     return (
-//         <>
-//             <h1>
-//                 Function inside main.jsx !
-//             </h1>
-//         </>
-//     )
-// }
+function MyApp(){
+    return (
+        <>
+            <h1>
+                Function inside main.jsx !
+            </h1>
+        </>
+    )
+}
 
 // const reactElement = {
 //     type: 'a',
@@ -44,8 +44,8 @@ const anotherElement = (
 
 createRoot(document.getElementById('root')).render(
     // <MyApp />
-    // MyApp()
-    reactElement
+    MyApp()
+    // reactElement
     // anotherElement
     // <App />
 )
