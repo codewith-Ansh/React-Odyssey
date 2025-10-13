@@ -13,6 +13,13 @@ Each folder represents a different setup or project as I explore React.
 - created using npm create vite@latest
 - Default React project setup with Vite
 
+**02_counter/**
+- Hooks and the JavaScript expressions
+- some theory out of this like VDOM, Fiber and reconciliation
+
+**custom_react/**
+- Custom React build from scratch without CRA or VITE
+
 ## Notes
 - Personal space for building and exploring React projects. 
 - A collection of my React projects and experiments.  
