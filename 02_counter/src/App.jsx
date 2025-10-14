@@ -4,12 +4,33 @@ import { useState } from "react";
 
 function App() {
   let [counter, setCounter] = useState(0);
-  // setCounter is the function used to update the state of state variable counter
+  // useState returns two values:
+  // counter - the current state value
+  // setCounter - the function used to update that value
 
   const addValue = () => {
+    setCounter(counter + 1);
     console.log("Value added", counter);
-    setCounter(counter + 1);  // it logs the current value and increases the counter by 1.
-  }
+
+    // These updates will not work as expected.
+    // React batches multiple state updates for better performance.
+    // Since all these updates use the same 'counter' value,
+    // React treats them as one update, and the counter increases only by 1.
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+
+    // Use the callback form of setCounter to access the latest updated value.
+    // Each update here receives the most recent state (prevCounter),
+    // so all four updates will be applied one after another.
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+    // setCounter(prevCounter => prevCounter + 1);
+
+    // The final result is that the counter increases by 4 instead of 1.
+  };
   const removeValue = () => {
     console.log("Value removed", counter);
     if(counter > 0) setCounter(counter - 1);  // it logs the current value and decreases the counter by 1.
