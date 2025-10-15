@@ -17,6 +17,14 @@ Each folder represents a different setup or project as I explore React.
 - Hooks and the JavaScript expressions
 - some theory out of this like VDOM, Fiber and reconciliation
 
+**03_tailwind_props/**
+- Tailwind CSS integration and props drilling
+- Making components and using them in code
+
+**04_bgChanger/**
+- Background changer project – change background on button click
+- useState, setState, Re-rendering and event handling
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
