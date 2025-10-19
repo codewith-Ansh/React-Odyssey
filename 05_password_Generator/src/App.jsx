@@ -8,9 +8,14 @@ function App() {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
 
-  //useRef hook
+  // useRef hook
+  // Keeps a mutable reference to a value or DOM element that persists across renders without causing re-renders.
+  // const ref = useRef(initialValue)
   const passwordRef = useRef(null);
 
+  // useCallback hook
+  // Memorizes a function so it doesn’t get recreated on every render, improving performance.
+  // const cachedFn = useCallback(fn, dependencies)
   const passwordGenerator = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -27,13 +32,17 @@ function App() {
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 999);
+    // passwordRef.current?.setSelectionRange(0, 5);
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
+  // useEffect hook
+  // Runs side effects in a component, like fetching data or updating the DOM after render.
+  // useEffect(setup, dependencies?)
   useEffect(() => {
     passwordGenerator();
   }, [length, numberAllowed, charAllowed, passwordGenerator]);
+
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
       <h1 className="text-white text-center my-3">Password generator</h1>
@@ -55,7 +64,7 @@ function App() {
         </button>
       </div>
       <div className="flex text-sm gap-x-2">
-        <div className="flex items-center gap-x-1">
+        <div className="flex items-center gap-x-3">
           <input
             type="range"
             min={6}
