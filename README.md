@@ -25,6 +25,10 @@ Each folder represents a different setup or project as I explore React.
 - Background changer project – change background on button click
 - useState, setState, Re-rendering and event handling
 
+**05_password_Generator/**
+- Password generator project - generate and copy a password with customizable length and characters
+- useState, useCallback, useEffect, useRef and Clipboard API
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
