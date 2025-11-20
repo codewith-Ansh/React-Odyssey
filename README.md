@@ -29,6 +29,10 @@ Each folder represents a different setup or project as I explore React.
 - Password generator project - generate and copy a password with customizable length and characters
 - useState, useCallback, useEffect, useRef and Clipboard API
 
+**06_currency_converter/**
+- Currency converter project - convert amounts between currencies with real-time rates and swap functionality
+- custom hooks, components, API fetch and useId
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
