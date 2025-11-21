@@ -11,8 +11,11 @@ function InputBox({
     currencyDisable = false,
     className = "",
 }) {
+    // useId() generates a unique ID for every component instance.
     const amountInputId = useId();
 
+    // Here to connect <label> with <input ..> we've used useId().
+    // So that when user click the label, the input gets focused.
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className="w-1/2">
@@ -41,7 +44,9 @@ function InputBox({
                     value={selectCurrency}
                     onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
                     disabled={currencyDisable}
-                >
+                >   
+
+                    {/* .map() in React is used to convert array into JSX elements */}
                     {currencyOptions.map((currency) => (
                         <option key={currency} value={currency}>
                             {currency}
