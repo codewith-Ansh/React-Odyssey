@@ -36,6 +36,10 @@ Each folder represents a different setup or project as I explore React.
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
+**Typeahead_Search/**
+- Typeahead search project - Add TypeAhead search with caching, loading states, and dynamic API fetching
+- Dynamic API Fetching, Caching with useRef, UI State Handling based on API response state
+
 ## Notes
 - Personal space for building and exploring React projects. 
 - A collection of my React projects and experiments.  
