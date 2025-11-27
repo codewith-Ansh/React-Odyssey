@@ -8,8 +8,9 @@ export default function About() {
                 <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
                     <div className="md:5/12 lg:w-5/12">
                         <img
-                            src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
-                            alt="image"
+                            src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                            alt="React Developer"
+                            className="w-full rounded-lg shadow-lg"
                         />
                     </div>
                     <div className="md:7/12 lg:w-6/12">
