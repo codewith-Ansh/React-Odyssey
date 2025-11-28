@@ -33,6 +33,14 @@ Each folder represents a different setup or project as I explore React.
 - Currency converter project - convert amounts between currencies with real-time rates and swap functionality
 - custom hooks, components, API fetch and useId
 
+**07_react_router/**
+- React Router project - Multi-page navigation using browser routing and nested routes
+- createBrowserRouter, RouterProvider, Route, Outlet, and dynamic URL params
+
+**08_miniContext/**
+- Context API project – manage global user state without prop-drilling
+- createContext, ContextProvider, and useContext
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
