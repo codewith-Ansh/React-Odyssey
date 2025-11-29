@@ -41,6 +41,10 @@ Each folder represents a different setup or project as I explore React.
 - Context API project – manage global user state without prop-drilling
 - createContext, ContextProvider, and useContext
 
+**09_themeSwitcher/**
+- Theme switching project - light and dark mode
+- Context, Provider and custom hooks in one single file for Context API setup
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
