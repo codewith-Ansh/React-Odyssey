@@ -45,6 +45,10 @@ Each folder represents a different setup or project as I explore React.
 - Theme switching project - light and dark mode
 - Context, Provider and custom hooks in one single file for Context API setup
 
+**10_ToDo_Context_Local/**
+- Todo App - Add, update and delete task
+- Context API, LocalStorage, and State management
+
 **custom_react/**
 - Custom React build from scratch without CRA or VITE
 
