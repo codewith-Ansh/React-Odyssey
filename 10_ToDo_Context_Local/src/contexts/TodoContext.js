@@ -1,8 +1,6 @@
-import { create } from "framer-motion/client";
 import { createContext, useContext } from "react";
-import React from 'react'
 
-export default TodoContext = createContext({
+const TodoContext = createContext({
     todos: [
         {
             id: 1,
@@ -10,10 +8,10 @@ export default TodoContext = createContext({
             completed: false
         }
     ],
-    addTodo: (todo) => { },
-    updateTodo: (id, todo) => { },
-    deleteTodo: (id) => { },
-    toggleComplete: (id) => { } 
+    addTodo: (todo) => { console.warn('addTodo called without provider') },
+    updateTodo: (id, todo) => { console.warn('updateTodo called without provider') },
+    deleteTodo: (id) => { console.warn('deleteTodo called without provider') },
+    toggleComplete: (id) => { console.warn('toggleComplete called without provider') }
 })
 
 export const useTodo = () => {
@@ -21,3 +19,4 @@ export const useTodo = () => {
 }
 
 export const TodoProvider = TodoContext.Provider
+export default TodoContext
