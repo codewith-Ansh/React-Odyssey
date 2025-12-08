@@ -47,7 +47,7 @@ function App() {
       localStorage.setItem("todos", JSON.stringify(todos))
     } catch (error) {
       console.error('Error saving todos to localStorage:', error)
-    }
+    }  
   }, [todos])
 
   return (
